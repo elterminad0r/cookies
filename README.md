@@ -37,3 +37,5 @@ Some projects on "the cookie game" in Python. Includes an automatic opponent and
     Jar 1: 2
     computer takes 2 cookies from jar { 2 }
     computer wins
+
+Also features a miscellaneous utility function that greps for lines containing the letters of a word, in order.
