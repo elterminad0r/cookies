@@ -86,12 +86,12 @@ def play(jars):
 
     if jars in pairs:
         print("player starts")
-        jars = player_move(jars)
     else:
         print("computer starts")
+        jars = computer_move(jars, pairs)
     
     while any(jars):
-        for player in (lambda j: computer_move(j, pairs), player_move):
+        for player in (player_move, lambda j: computer_move(j, pairs)):
             print("Jars are: \n{}".format("\n".join(map("Jar {0[0]}: {0[1]}".format, enumerate(jars)))))
             jars = player(jars)
 
